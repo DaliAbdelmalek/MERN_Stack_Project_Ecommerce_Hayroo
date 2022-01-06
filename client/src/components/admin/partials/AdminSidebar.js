@@ -12,7 +12,7 @@ const AdminSidebar = (props) => {
         id="sidebar"
         className="hidden md:block sticky top-0 left-0 h-screen md:w-3/12 lg:w-2/12 sidebarShadow bg-white text-gray-600"
       >
-        <div
+        {/*<div
           onClick={(e) => history.push("/admin/dashboard")}
           className={`${
             location.pathname === "/admin/dashboard"
@@ -37,7 +37,7 @@ const AdminSidebar = (props) => {
             </svg>
           </span>
           <span className="hover:text-gray-800">Dashboard</span>
-        </div>
+        </div>*/}
         <hr className="border-b border-gray-200" />
         <div
           onClick={(e) => history.push("/admin/dashboard/categories")}

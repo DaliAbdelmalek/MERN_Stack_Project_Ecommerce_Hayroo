@@ -39,18 +39,8 @@ const Navber = (props) => {
             >
               Shop
             </span>
-            <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              onClick={(e) => history.push("/blog")}
-            >
-              Blog
-            </span>
-            <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              onClick={(e) => history.push("/contact-us")}
-            >
-              Contact us
-            </span>
+            
+            
           </div>
           <div className="col-span-2 lg:hidden flex justify-items-stretch	 items-center">
             <svg
@@ -73,7 +63,7 @@ const Navber = (props) => {
               style={{ letterSpacing: "0.10rem" }}
               className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
             >
-              Hayroo
+              Markini
             </span>
           </div>
           <div
@@ -81,33 +71,16 @@ const Navber = (props) => {
             style={{ letterSpacing: "0.70rem" }}
             className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
-            Hayroo
+            Markini
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
-            {/*  WishList Page Button */}
+            
             <div
               onClick={(e) => history.push("/wish-list")}
               className="hover:bg-gray-200 rounded-lg px-2 py-2 cursor-pointer"
               title="Wishlist"
             >
-              <svg
-                className={`${
-                  location.pathname === "/wish-list"
-                    ? "fill-current text-gray-800"
-                    : ""
-                } w-8 h-8 text-gray-600 cursor-pointer`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
+              
             </div>
             {localStorage.getItem("jwt") ? (
               <Fragment>
@@ -133,28 +106,10 @@ const Navber = (props) => {
                     {!isAdmin() ? (
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
-                          <span
-                            onClick={(e) => history.push("/user/orders")}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
-                          >
-                            <span>
-                              <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                              </svg>
-                            </span>
-                            <span>My Orders</span>
-                          </span>
+                        
+                            
+                           
+                          
                           <span
                             onClick={(e) => history.push("/user/profile")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
@@ -177,28 +132,7 @@ const Navber = (props) => {
                             </span>
                             <span>My Account</span>
                           </span>
-                          <span
-                            onClick={(e) => history.push("/wish-list")}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
-                          >
-                            <span>
-                              <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                                />
-                              </svg>
-                            </span>
-                            <span>My Wishlist</span>
-                          </span>
+                          
                           <span
                             onClick={(e) => history.push("/user/setting")}
                             className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
@@ -255,7 +189,7 @@ const Navber = (props) => {
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
                           <span
-                            onClick={(e) => history.push("/admin/dashboard")}
+                            onClick={(e) => history.push("/admin/dashboard/categories")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>

@@ -31,7 +31,7 @@ const DashboardCard = (props) => {
             </svg>
           </div>
           <div className="text-2xl font-semibold">
-            {data ? data.totalData.Users : 0}
+            {/*{data ? data.totalData.Users : 0}*/}
           </div>
           <div className="text-lg font-medium">Customers</div>
           <div className="flex items-center space-x-1 text-green-500">

@@ -168,10 +168,10 @@ const CartModal = (props) => {
                 {isAuthenticate() ? (
                   <div
                     className="px-4 py-2 bg-black text-white text-center cursor-pointer"
-                    onClick={(e) => {
+                    /*onClick={(e) => {
                       history.push("/checkout");
                       cartModalOpen();
-                    }}
+                    }}*/
                   >
                     Checkout ${data.cartTotalCost}.00
                   </div>
